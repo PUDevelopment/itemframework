@@ -6,8 +6,6 @@ Az itemeket maga az API, a szerver gyökérkönyvtárában fogja tárolni.
 # Használat
 A tervek szerint a használata a következő módon fog kinézni:
 
-public class ExampleHandler implements CustomItemHandler {
-	
 ```java
 public class ExampleHandler implements CustomItemHandler {
 	
