@@ -25,7 +25,36 @@ public class ExampleHandler implements CustomItemHandler {
 	
 }
 ```
+Handler beregisztrálása: (tervezet)
+```java
+ItemFramework itemFramework = new ItemFramework();
+			
+itemFramework.getCustomItemManager().registerCustomItemHandler(new ExampleHandler());
+```
+
+Példa item beregisztrálása: (tervezet)
+
+```json
+{
+    "key": "peldaItem",
+    "material": "STONE_PICKAXE",
+    "displayName": "Példa item",
+    "lore": [
+        "&7Ez itt egy példa item"
+    ],
+    "enchanted": true,
+    "enchantments": [
+        {
+            "enchantment": "SILK_TOUCH",
+            "level": 1,
+            "ignoreRestriction": false
+        }
+    ]
+}
+```
+Mentsd el a fájlt a ``%szervered%/customItems`` mappába ``peldaItem.json`` néven.
 
 # Buildelés
 ``$ git clone https://github.com/PUDevelopment/itemframework.git``
+
 A projekt fejlesztésénél Mavent használunk!
